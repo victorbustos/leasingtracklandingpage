@@ -1,0 +1,30 @@
+// Variables
+$green-primary: #35CD41;
+$green-secondary: #299B32;
+$lime-green: #7EF469;
+$dark-blue: #0A2F4B;
+$blue: #2C6FAE;
+
+// Section 1
+body {
+  font-family: 'Open Sans',sans-serif;
+  
+}
+.lead-gen {
+  .green-wrap {
+    background: -webkit-gradient(linear,left top, left bottom,from($green-secondary),to($green-primary));
+    background: linear-gradient($green-secondary,$green-primary);
+    height: 100%;
+    h1 {
+      color: white;
+      font-size: 45px;
+      padding: 34px 2.45em;
+      span {
+        text-transform: uppercase;
+        display:block; font-weight: 800;
+      }
+      line-height: 1.35em;
+    }
+  } 
+  .top-blue-wrap {} 
+}

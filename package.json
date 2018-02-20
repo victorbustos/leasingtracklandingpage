@@ -1,0 +1,24 @@
+{
+  "name": "leasingtrack-leadgen",
+  "version": "1.0.0",
+  "description": "landing page design using Gulp and SASS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gulp",
+    "SCSS"
+  ],
+  "author": "Victor Bustos",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-util": "^3.0.8"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
