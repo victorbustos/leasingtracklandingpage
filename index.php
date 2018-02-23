@@ -67,7 +67,7 @@
                   </div>
                   <div class="col-lg-10 col-md-10 col-sm-8">
                     <h3>Leasing is Profitable</h3>
-                    <p>The margin is higher on leased equipment.</p>
+                    <p>The margin is higher on leased equipment. Much higher!</p>
                   </div>
                   <div class="clearfix"></div>
                   
