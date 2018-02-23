@@ -2,19 +2,73 @@
 $green-primary: #35CD41;
 $green-secondary: #299B32;
 $lime-green: #7EF469;
+$dark-green: #027C0C;
 $dark-blue: #0A2F4B;
 $blue: #2C6FAE;
+$gray: #657988;
 
-// Section 1
+
+@media screen and (max-width: 1368px) {
+  .phone-break-md {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .phone-break-sm {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .phone-break-tiny {
+    display: block!important;
+  }
+}
+@media screen and (min-width: 480px) {
+  .phone-break-tiny {
+    display: inline-block!important;
+  }
+}
+
+
 body {
   font-family: 'Open Sans',sans-serif;
-  
+  font: normal 1.65em/0.9em 'Open Sans',sans-serif;
+  color: $gray;
 }
+.top-gap {margin-top: 40px;}
+.bottom-gap {margin-bottom: 40px;}
+
+.btn-lg {
+  font-size: 26px;
+  padding: 30px; font-weight: bold;
+  background: $green-primary;
+  transition: background-color 100ms linear;
+  border: 2px solid $lime-green;
+  border-radius: 12px;
+  text-shadow: 1px 2px 0 $dark-green;
+  &:hover {
+    background: $green-secondary;
+  }
+}
+
 .lead-gen {
-  .green-wrap {
+  .left-green-wrap {
+    
     background: -webkit-gradient(linear,left top, left bottom,from($green-secondary),to($green-primary));
     background: linear-gradient($green-secondary,$green-primary);
-    height: 100%;
+    position: relative;
+    height: 100vh;
+    @media only screen and (max-width: 992px){
+      height: 100%;
+    }
+    .fullheight-fill {
+      left:0; position: absolute; top:0; bottom: -180%; background: $green-primary; width: 100%; z-index: -1;
+      @media only screen and (max-width: 992px){
+        display: none;
+      }
+    }
     h1 {
       color: white;
       font-size: 45px;
@@ -25,6 +79,161 @@ body {
       }
       line-height: 1.35em;
     }
+    @media only screen and (max-width: 1600px){
+      h1 {padding: 0; font-size: 38px; }
+    }
+    @media only screen and (max-width: 992px){
+      h1 {padding: 40px 70px; font-size: 38px; }
+    }
+    @media only screen and (max-width: 786px){
+      h1 {
+        text-align: center;
+        padding: 20px; font-size: 24px; line-height: 34px;
+      }
+    }
+    .logo {padding: 15px 38px; background: white; margin:0 -15px; }
   } 
-  .top-blue-wrap {} 
-}
+  .top-blue-wrap {
+    background: $dark-blue;
+    color: $lime-green;
+    overflow: hidden;
+    p.lead {text-transform: uppercase; font-size: 45px; padding: 65px 0 80px 0;}
+    .call-wrap {
+      padding: 65px 0 80px 0;
+    }
+    @media only screen and (max-width: 1600px){
+      p.lead {font-size: 38px; padding: 40px 0 60px 0;}
+    }
+    @media only screen and (max-width: 786px){
+      p.lead {font-size: 20px; padding: 40px 0 0px 0; text-align: center;}
+      .call-wrap {
+        padding: 20px 0 40px 0;
+        .btn-lg {padding: 20px;}
+      }
+    }
+    @media only screen and (max-width: 480px){
+      .call-wrap .btn-lg {font-size: 1.2em; padding: 14px;}
+    }
+  } 
+  .reasons-wrap {
+    padding-left: 60px;
+    img.img-responsive.center-block.hidden-sm.hidden-xs {
+      margin-top: -35%;
+      @media only screen and (max-width: 1200px){
+        margin-top: 0%;
+      }
+    }
+    h2 {
+      font: 100 58px/1em 'Open Sans',sans-serif;
+      color: $green-primary;
+      border-bottom: 2px solid $green-primary;
+      margin-top: 80px; margin-bottom: 40px;
+      padding-bottom: 60px; 
+      span.seven {
+        font-weight: normal;
+        color: $blue; line-height: .7em;
+        padding-bottom: 15px;
+        margin-left: -15px;
+        font-size: 228px; display: block; float: left;
+      }
+      span.reasons {
+        color: $blue; display: block;
+        font-weight: bold;
+        font-size: 74px;
+      }
+    }
+    .num {
+      float:right;
+      width: 73px; height: 73px; border-radius: 50%;
+      background: $blue;
+      color: white;
+      text-align: center;
+      padding-top: 14px;
+      margin-top: 10px;
+      font: bold 40px/40px 'Open Sans',sans-serif;
+      @media only screen and (max-width: 1600px){
+        width: 50px; height: 50px;
+        font: bold 30px/30px 'Open Sans',sans-serif;
+      }
+      @media only screen and (max-width: 786px){
+        margin-bottom: 80px;
+      }
+      @media only screen and (max-width: 480px){
+        padding-top: 6px;
+        width: 40px; height: 40px;
+        font: bold 24px/24px 'Open Sans',sans-serif;
+      }
+    }
+    h3 {
+      font-size: 2.5em; font-weight: bold;
+      color: $green-primary;
+      @media only screen and (max-width: 786px){
+        font-size: 2em; margin-top: 0;
+      }
+      @media only screen and (max-width: 480px){
+        font-size: 1.7em;
+      }
+    }
+    p {
+      font-size: 26px;
+      line-height: 1.4em;
+      margin-bottom: 40px;
+      @media only screen and (max-width: 1368px){
+        font: normal 18px/1em 'Open Sans',sans-serif;
+      }
+      
+    }
+    @media only screen and (max-width: 1600px){
+      padding-left: 0;
+    }
+    img.dish-img {
+      margin-top: -25%;
+      
+    }
+    .cta-area {
+
+      p.letus {
+        color: $blue;
+        font: normal 32px/1.2em 'Open Sans',sans-serif;
+        text-align: center;
+        margin: 50px 0;
+      }
+      .btn-lg {
+        font-size: 26px;
+        padding: 30px; font-weight: bold;
+        background: $green-primary;
+        transition: background-color 100ms linear;
+        border: 2px solid $lime-green;
+        border-radius: 12px;
+        text-shadow: 1px 2px 0 $dark-green;
+        margin-bottom: 80px;
+        &:hover {
+          background: $green-secondary;
+        }
+      }
+      p.questions {
+        text-align: center;
+        span {font-weight: bold; color: $green-primary;}
+      }
+    }
+    .last-col {
+      padding-right: 30px;
+      @media only screen and (max-width: 1200px){padding: 34px;}
+    }
+    p.we-are {
+      margin: 40px 0 0 0; padding: 30px; border: 1px solid $gray;
+      @media only screen and (max-width: 1200px){
+        // padding: 0;
+      }
+    }
+    .contact-form {
+      padding: 10px 38px 40px 38px; background: $dark-blue;
+      input , textarea {border-radius: 0;}
+      .btn-lg {padding: 16px; border-radius: 0; font-size: 24px;}
+      @media only screen and (max-width: 1440px){
+        padding: 10px 20px 30px 20px;
+      }
+    }
+    
+  } // .reasons-wrap
+} //.lead-gen
