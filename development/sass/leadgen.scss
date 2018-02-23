@@ -224,7 +224,10 @@ body {
       }
       p.questions {
         text-align: center;
-        span {font-weight: bold; color: $green-primary;}
+        a {
+          font-weight: bold; color: $green-primary;
+          text-decoration: none;
+        }
       }
     }
     .last-col {

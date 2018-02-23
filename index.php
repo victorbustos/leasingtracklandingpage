@@ -113,7 +113,7 @@
                       <a class="btn btn-primary btn-block btn-lg" href="https://leasingtrack.com/index.php/get_started">Become a Dealer</a>  
                     </div>
                     <p class="questions">Questions? Give Us a Call:<br>
-                      <span>(855) 865-6046</span>
+                      <a href="tel:855-865-6046">(855) 865-6046</a>
                     </p>
                   </div>
                   
@@ -151,16 +151,16 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <a href="https://leasingtrack.com">
-                <img class="img-responsive center-block" src="images/leasing-track-logo.png" alt="Leasing Track logo">
-              </a>
+              <div class="footer">
+                <a href="https://leasingtrack.com">
+                  <img class="img-responsive center-block" src="images/leasing-track-logo.png" alt="Leasing Track logo">
+                </a>  
+              </div>
             </div>
           </div>
         </div>
         
-        <div class="footer">
-          
-        </div>
+
       </div> 
     </div>
   </div>
