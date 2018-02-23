@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title></title>
+<title>Leasing Track - 7 Reasons to Let Us Be Your Financing Source</title>
+<meta name="description" content="Let us do the financing for you and approve more customers through us.">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <link rel="stylesheet" href="https://leasingtrack.com/new/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/leadgen.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script src="js/leadgen-scripts.js" charset="utf-8"></script>
 </head>
 <body>
   
@@ -21,7 +21,9 @@
           <h1><span> <span class="phone-break-tiny"> Are You Still</span> Saying No</span> to customers that can’t afford cash, have bad credit or you simply don’t want to deal with financing?</h1>
           <img class="img-responsive center-block" src="images/credit-rejected.png" alt="No more unnapproved credit applications">
           <div class="logo visible-xs visible-sm">
-            <img class="img-responsive center-block" src="images/leasing-track-logo.png" alt="Leasing Track logo">
+            <a class="" href="https://leasingtrack.com/">
+              <img class="img-responsive center-block" src="images/leasing-track-logo.png" alt="Leasing Track logo">
+            </a>
           </div>
           <div class="fullheight-fill"></div>
         </div>
@@ -108,7 +110,7 @@
                   <div class="cta-area">
                     <p class="letus">Let us do the financial negotiating for you and stand out to your customers!</p>
                     <div class="text-center">
-                      <a class="btn btn-primary btn-block btn-lg" href="#">Become a Dealer</a>  
+                      <a class="btn btn-primary btn-block btn-lg" href="https://leasingtrack.com/index.php/get_started">Become a Dealer</a>  
                     </div>
                     <p class="questions">Questions? Give Us a Call:<br>
                       <span>(855) 865-6046</span>
@@ -120,7 +122,7 @@
                 
                 <div class="col-lg-5 last-col">
                   <img class="img-responsive center-block hidden-sm hidden-xs" src="images/dishwashers.png" alt="Commercial Dishwashers">
-                  <a class="" href="#">
+                  <a class="" href="https://leasingtrack.com/">
                     <img class="img-responsive center-block top-gap" src="images/leasing-track-logo.png" alt="Leasing Track logo">
                   </a>
                   <p class="we-are">We are the equipment industry leader in tailored financing programs. We also pride ourselves in being the fastest online approval system in the industry.</p>
@@ -135,7 +137,7 @@
               						<input type="text" class="form-control input-lg" id="email" name="email" placeholder="Email" required>
               					</div>
                         <div class="form-group">
-                          <textarea class="form-control input-lg" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                          <textarea class="form-control input-lg" type="textarea" id="message" placeholder="Message"></textarea>
                         </div>
                         <button type="button" id="submit" name="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
                       </form>
@@ -149,7 +151,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <a href="#">
+              <a href="https://leasingtrack.com">
                 <img class="img-responsive center-block" src="images/leasing-track-logo.png" alt="Leasing Track logo">
               </a>
             </div>

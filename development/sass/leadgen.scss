@@ -124,7 +124,7 @@ body {
       }
     }
     h2 {
-      font: 100 58px/1em 'Open Sans',sans-serif;
+      font: 100 3.6em/1em 'Open Sans',sans-serif;
       color: $green-primary;
       border-bottom: 2px solid $green-primary;
       margin-top: 80px; margin-bottom: 40px;
@@ -134,12 +134,23 @@ body {
         color: $blue; line-height: .7em;
         padding-bottom: 15px;
         margin-left: -15px;
-        font-size: 228px; display: block; float: left;
+        font-size: 4em; display: block; float: left;
       }
       span.reasons {
         color: $blue; display: block;
         font-weight: bold;
-        font-size: 74px;
+        font-size: 1.2em;
+      }
+      @media only screen and (max-width: 1500px){
+        font: 100 3em/1em 'Open Sans',sans-serif;
+      }
+      @media only screen and (max-width: 600px){
+        font: 100 2.5em/1em 'Open Sans',sans-serif;
+      }
+      @media only screen and (max-width: 480px){
+        margin-top: 40px;
+        font: 600 2.1em/1em 'Open Sans',sans-serif;
+        margin-bottom: 20px; padding-bottom: 40px;
       }
     }
     .num {
