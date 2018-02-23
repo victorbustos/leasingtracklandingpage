@@ -9,28 +9,19 @@ $gray: #657988;
 
 
 @media screen and (max-width: 1368px) {
-  .phone-break-md {
-    display: block;
-  }
+  .phone-break-md { display: block; }
 }
 
 @media screen and (max-width: 786px) {
-  .phone-break-sm {
-    display: inline-block;
-  }
+  .phone-break-sm { display: inline-block; }
 }
 
 @media screen and (max-width: 480px) {
-  .phone-break-tiny {
-    display: block!important;
-  }
+  .phone-break-tiny { display: block!important; }
 }
 @media screen and (min-width: 480px) {
-  .phone-break-tiny {
-    display: inline-block!important;
-  }
+  .phone-break-tiny { display: inline-block!important; }
 }
-
 
 body {
   font-family: 'Open Sans',sans-serif;
@@ -175,6 +166,7 @@ body {
         padding-top: 6px;
         width: 40px; height: 40px;
         font: bold 24px/24px 'Open Sans',sans-serif;
+        margin-bottom: 90px;
       }
     }
     h3 {
@@ -199,10 +191,7 @@ body {
     @media only screen and (max-width: 1600px){
       padding-left: 0;
     }
-    img.dish-img {
-      margin-top: -25%;
-      
-    }
+    img.dish-img { margin-top: -25%; }
     .cta-area {
 
       p.letus {
