@@ -6,6 +6,7 @@
 <meta name="description" content="Let us do the financing for you and approve more customers through us.">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="icon" href="https://leasingtrack.com/favicon.png" type="image/png"/>
 <link rel="stylesheet" href="https://leasingtrack.com/new/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/leadgen.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -128,9 +129,10 @@
                     <img class="img-responsive center-block top-gap" src="images/leasing-track-logo.png" alt="Leasing Track logo">
                   </a>
                   <p class="we-are">We are the equipment industry leader in tailored financing programs. We also pride ourselves in being the fastest online approval system in the industry.</p>
+                  
                   <div class="contact-form">
                     <div class="form-area bottom-gap">  
-                      <form role="form" id="contact">
+                      <form id="contact" action="#" method="post" name="contact">
                         <h3 class="text-center">Contact Form</h3>
                   			<div class="form-group">
               						<input type="text" class="form-control input-lg" id="name" name="name" placeholder="Enter Full Name" required>
