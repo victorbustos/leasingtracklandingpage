@@ -50,6 +50,7 @@ gulp.task('connect', function() {
 // Task to compile SASS files
 gulp.task('sass', function() {
     gulp.src(sassMain) // use sassMain file source
+        .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compressed' // Style of compiled CSS
         })
