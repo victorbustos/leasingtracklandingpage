@@ -20,7 +20,7 @@ $msg .= "<br><br></body></html>";
 
 
 if(@mail($sendto, $subject, $msg, $headers)) {
-	echo "Thank You! Your Message has been sent. We will get back to you as soon as possible. ";
+	echo "Success! Your Message has been sent. Thank you, we'll get back to you shortly.";
 } else {
 	echo "false";
 }

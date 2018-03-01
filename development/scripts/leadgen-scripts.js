@@ -42,7 +42,7 @@ $(document).ready(function() {
         success: function(data) {
           if(data == "true") {
             $("#contact").fadeOut("fast", function(){
-              $(this).before("<p style='font-size: 36px; color: white;'><strong>Success! Your Message has been sent, thanks :)</strong></p>");
+              $(this).before("<p style='font-size: 25px; color: #9cffa4;'><strong>Success! Your Message has been sent. Thank you, we'll get back to you shortly.</strong></p>");
             });
           }
         },
