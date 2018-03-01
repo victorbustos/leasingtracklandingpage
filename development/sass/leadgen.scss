@@ -168,6 +168,9 @@ body {
         font: bold 24px/24px 'Open Sans',sans-serif;
         margin-bottom: 90px;
       }
+      @media only screen and (max-width: 320px){
+        margin-bottom: 120px;
+      }
     }
     h3 {
       font-size: 2.5em; font-weight: bold;
@@ -233,6 +236,36 @@ body {
     }
     .contact-form {
       padding: 10px 38px 40px 38px; background: $dark-blue;
+      form {
+        
+
+        input.error,
+        textarea.error {
+        	border-color: #973d3d;
+        	border-style: solid;
+        	background: #f0bebe;
+        	color: #a35959;
+          &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #973d3d;
+          }
+          &::-moz-placeholder { /* Firefox 19+ */
+            color: #973d3d;
+          }
+          &:-ms-input-placeholder { /* IE 10+ */
+            color: #973d3d;
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+            color: #973d3d;
+          }
+        }
+
+        input.error:focus,
+        textarea.error:focus {
+        	border-color: #973d3d;
+        	color: #a35959;
+        }        
+        
+      }
       input , textarea {border-radius: 0;}
       .btn-lg {padding: 16px; border-radius: 0; font-size: 24px;}
       @media only screen and (max-width: 1440px){

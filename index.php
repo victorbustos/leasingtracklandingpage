@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="https://leasingtrack.com/new/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/leadgen.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="/js/scripts.js" charset="utf-8"></script>
 </head>
 <body>
   
@@ -128,19 +130,22 @@
                   <p class="we-are">We are the equipment industry leader in tailored financing programs. We also pride ourselves in being the fastest online approval system in the industry.</p>
                   <div class="contact-form">
                     <div class="form-area bottom-gap">  
-                      <form role="form">
+                      <form role="form" id="contact">
                         <h3 class="text-center">Contact Form</h3>
                   			<div class="form-group">
-              						<input type="text" class="form-control input-lg" id="name" name="name" placeholder="Name" required>
+              						<input type="text" class="form-control input-lg" id="name" name="name" placeholder="Enter Full Name" required>
               					</div>
               					<div class="form-group">
               						<input type="text" class="form-control input-lg" id="email" name="email" placeholder="Email" required>
               					</div>
                         <div class="form-group">
-                          <textarea class="form-control input-lg" type="textarea" id="message" placeholder="Message"></textarea>
+                          <textarea class="form-control input-lg" name="message" type="textarea" id="message" placeholder="Message"></textarea>
                         </div>
-                        <button type="button" id="submit" name="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+                        <!-- <input class="btn btn-default" id="submit" name="submit" type="button" value="Send Mail" /> -->
+                        <button value="Send Mail" type="button" id="submit" name="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
+
                       </form>
+                      <div class="top-gap" id="alert-msg"></div>
                     </div>                    
                     
                   </div>
@@ -164,6 +169,38 @@
       </div> 
     </div>
   </div>
+
+  
+  <!-- <script type="text/javascript">
+    
+    $('#submit').click(function() {
+        var form_data = {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            message: $('#message').val()
+        };
+        $.ajax({
+            url: "/send.php",
+            type: 'POST',
+            data: form_data,
+            success: function(msg) {
+                if (msg == 'YES'){
+                  $('#alert-msg').html('<div class="alert alert-success text-center">Your mail has been sent successfully!</div>');
+                }
+                    
+                else if (msg == 'NO'){
+                  $('#alert-msg').html('<div class="alert alert-danger text-center">Error in sending your message! Please try again later.</div>');
+                }
+                    
+                else {
+                  $('#alert-msg').html('<div class="alert alert-danger">' + msg + '</div>');
+                }
+                    
+            }
+        });
+        return false;
+    });
+  </script> -->
 
 </body>
 </html>

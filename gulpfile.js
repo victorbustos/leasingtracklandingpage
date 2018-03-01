@@ -4,6 +4,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     gutil = require('gulp-util'),
+    sourcemaps = require('gulp-sourcemaps'),
+    connect = require('gulp-connect-php'), // For built-in PHP server:  php -S localhost:8000
     browserSync = require('browser-sync').create();
 
 
@@ -20,13 +22,12 @@ var browserSyncWatchFiles = [
 ];
 
 // browser-sync options
-// see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    // proxy: "http://localhost:8000",
+    proxy: "127.0.0.1:8000",
     // xip: true,
-    server: {
-      baseDir: "./"
-    },
+    // server: {
+    //   baseDir: "./"
+    // },
     notify: {
       styles: {
         fontSize: '10px', position: 'fixed',
@@ -40,6 +41,10 @@ var browserSyncOptions = {
     },
 };
 
+// Task to Start Local PHP Server
+gulp.task('connect', function() {
+    connect.server();
+});
 
 
 // Task to compile SASS files
@@ -49,6 +54,7 @@ gulp.task('sass', function() {
             outputStyle: 'compressed' // Style of compiled CSS
         })
             .on('error', gutil.log)) // Log descriptive errors to the terminal
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('css')); // The destination for the compiled file
 });
 
@@ -56,9 +62,9 @@ gulp.task('sass', function() {
 // Task to concatenate and uglify js files
 gulp.task('concat', function() {
     gulp.src(jsSources) // use jsSources
-        .pipe(concat('script.js')) // Concat to a file named 'script.js'
+        .pipe(concat('scripts.js')) // Concat to a file named 'script.js'
         .pipe(uglify()) // Uglify concatenated file
-        .pipe(gulp.dest('assets/js')); // The destination for the concatenated and uglified file
+        .pipe(gulp.dest('js')); // The destination for the concatenated and uglified file
 });
 
 
@@ -79,5 +85,5 @@ gulp.task('browser-sync', function() {
 
 
 // Default gulp task
-gulp.task('default', ['sass', 'watch','browser-sync']);
+gulp.task('default', [ 'sass', 'watch','browser-sync']);
 // gulp.task('default', ['sass', 'concat', 'watch']);
