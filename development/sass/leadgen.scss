@@ -91,6 +91,12 @@ body {
     p.lead {text-transform: uppercase; font-size: 45px; padding: 65px 0 80px 0;}
     .call-wrap {
       padding: 65px 0 80px 0;
+      a.visit-us {
+        display: block;
+        padding: 30px 0;
+        color: white;
+        text-align: center;
+      }
     }
     @media only screen and (max-width: 1600px){
       p.lead {font-size: 38px; padding: 40px 0 60px 0;}
@@ -109,7 +115,7 @@ body {
   .reasons-wrap {
     padding-left: 60px;
     img.img-responsive.center-block.hidden-sm.hidden-xs {
-      margin-top: -35%;
+      margin-top: -28%;
       
       @media only screen and (min-width: 2000px){margin-top: -100px;}
       @media only screen and (max-width: 1200px){

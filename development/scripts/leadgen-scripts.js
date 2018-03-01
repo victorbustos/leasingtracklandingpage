@@ -26,18 +26,18 @@ $(document).ready(function() {
     
     if(nameval < 4) {
       $("#name").addClass("error");
-      $("#name").attr("placeholder", "Please enter your first name");
+      $("#name").attr("placeholder", "Please enter your full name");
     }
     
   
     if(mailvalid == true) {
       // if both validate we attempt to send the e-mail
       // first we hide the submit btn so the user doesnt click twice
-      $("#submit").replaceWith("<div style='color: white; font-size: 26px; text-align: center; padding-top: 15px;'>sending...</div>");
+      $("#submit").replaceWith("<div style='color: white; font-size: 24px; text-align: center; padding-top: 15px;'>sending...</div>");
       
       $.ajax({
         type: 'POST',
-        url: './../send.php',
+        url: 'send.php',
         data: $("#contact").serialize(),
         success: function(data) {
           if(data == "true") {
@@ -45,6 +45,9 @@ $(document).ready(function() {
               $(this).before("<p style='font-size: 36px; color: white;'><strong>Success! Your Message has been sent, thanks :)</strong></p>");
             });
           }
+        },
+        error: function() {
+            alert("Bad submit");
         }
       });
     }
